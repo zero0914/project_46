@@ -1,0 +1,100 @@
+html {
+    background: #f5f7f8;
+    font-family: system-ui;
+    -webkit-font-smoothing: antialiased;
+    padding: 20px 0;
+  }
+  header{
+    
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  .container {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+    
+  }
+  .band {
+    width: 90%;
+    max-width: 1240px;
+    margin: 40px;
+    
+    display: grid;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    
+    @media (min-width: 30em) {
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    @media (min-width: 60em) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .card {
+    background: white;
+    text-decoration: none;
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    
+    // sets up hover state
+    position: relative;
+    top: 0;
+    
+      
+    
+    article {
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    h1 {
+      font-size: 17px;
+      margin: 0;
+      color: #333;
+    }
+
+    h2{
+
+      font-size: 15px;
+      margin-top: 0.2rem;
+      color: #333;
+      
+      }
+    
+    p {
+      flex: 1;
+      line-height: 1.4;
+      font-size: 15px;
+    }
+    
+    span {
+      font-size: 15px;
+      font-weight: bold;
+      color: #999;
+      
+    }
+    
+    .thumb {
+      padding: 50%;
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+  
+  .item {
+    @media (min-width: 60em) {
+      grid-column: 1 / span 2;
+      
+      h1 {
+        font-size: 24px;
+      }
+    }
+  }
